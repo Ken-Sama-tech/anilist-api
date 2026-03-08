@@ -1,1 +1,9 @@
-export * from "./enums";
+//Enums ----------------------------------------
+export * from "./enums/StaffLanguage";
+export * from "./enums/StaffSort";
+
+//Objects --------------------------------------
+export * from "./objects/Staff";
+export * from "./objects/StaffConnection";
+export * from "./objects/StaffEdge";
+export * from "./objects/StaffRoleType";

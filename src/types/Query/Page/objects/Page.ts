@@ -1,0 +1,37 @@
+import type { ActivityUnion, NotificationUnion } from "../../../Union";
+import type { ActivityReply } from "../../ActivityReply";
+import type { AiringSchedule } from "../../AiringSchedule";
+import type { Character } from "../../Character";
+import type { Media } from "../../Media";
+import type { MediaList } from "../../MediaList";
+import type { MediaTrend } from "../../MediaTrend";
+import type { User } from "../../User";
+import type { PageInfo } from "../";
+import type { Recommendation } from "../../Recommendation";
+import type { Review } from "../../Review";
+import type { Staff } from "../../Staff";
+import type { Studio } from "../../Studio";
+import type { ThreadComment } from "../../ThreadComment";
+import type { Thread } from "../../Thread";
+
+export type Page = {
+  activities: ActivityUnion[];
+  activityReplies: ActivityReply[];
+  airingSchedules: AiringSchedule[];
+  characters: Character[];
+  followers: User[];
+  following: User[];
+  likes: User[];
+  media: Media[];
+  mediaList: MediaList[];
+  mediaTrends: MediaTrend[];
+  notifications: NotificationUnion[];
+  pageInfo: PageInfo;
+  recommendations: Recommendation[];
+  reviews: Review[];
+  staff: Staff[];
+  studios: Studio[];
+  threadComments: ThreadComment[];
+  threads: Thread[];
+  users: User[];
+};
